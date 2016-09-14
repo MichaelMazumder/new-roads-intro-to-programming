@@ -13,14 +13,16 @@ public class Average{
      
      Scanner input = new Scanner(System.in);
      
-     System.out.println("Enter 3 Numbers: ");
+     System.out.println("This is a Pythagorean Theorem calculator.");
+     System.out.println("Enter side lengths of a and b to receive the lenth of the hypotenuse.: ");
+     System.out.println("a^2+b^2=c^2");
      double num1 = input.nextDouble();
      double num2 = input.nextDouble();
-     double num3 = input.nextDouble();
      
-     double average = (num1 + num2 + num3)/3;
+     double multiplication = (Math.sqrt((num1) * (num1) + (num2) * (num2)));
      
-     System.out.println("This is the average " + average);
+     System.out.println("Side c equals: " + multiplication);
+
    
    }
 
