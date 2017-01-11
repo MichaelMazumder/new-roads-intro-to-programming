@@ -1,19 +1,21 @@
 public class Card{
-  private String color;
+  //private String color;
   private String suit; 
   private char rank; 
   
   public Card(){
-    color = "red";
+    /*color = "red";
     suit = "diamonds";
-    rank = 'A';
+    rank = 'A';*/
   }
-  public String getColor(){
-    return color;
+  public Card(String newSuit, char newRank){
+    //color = newColor;
+    suit = newSuit;
+    rank = newRank;
   }
-  public void setColor(String newColor){
-    color = newColor;
-  }
+  /*public String getColor(){
+    return color;*/
+  
   public String getSuit(){
     return suit;
   }
@@ -28,7 +30,7 @@ public class Card{
   }
  
   public String toString(){
-    return color + " " + suit + " " + rank; 
+    return suit + " " + rank; 
   }
 
 }

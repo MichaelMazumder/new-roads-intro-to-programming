@@ -1,7 +1,19 @@
 public class CardTester{
   public static void main(String[] args){
     
-    Card c = new Card();
+   // Card card = new Card("red", "diamonds", '8');
+   // System.out.println(card);
+    
+    RedCard rCard = new RedCard();
+    rCard.setSuit("diamonds");
+    rCard.setRank('3');
+    System.out.println(rCard);
+    
+    BlackCard bCard = new BlackCard(); 
+    bCard.setSuit("Clubs");
+    bCard.setRank('7');
+    System.out.println(bCard);
+    /*Card c = new Card();
     c.setColor("Black");
     c.setSuit("Clubs");
     c.setRank('1'); 
@@ -32,6 +44,6 @@ public class CardTester{
     c4.setSuit("Clubs");
     c4.setRank('7');
     
-    System.out.println(c4.toString());
+    System.out.println(c4.toString());*/
   }
 }
